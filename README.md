@@ -96,12 +96,8 @@ http://127.0.0.1:8000
   - or **forcefully closes** them after `SHUTDOWN_TIMEOUT` (default: 30 minutes).  
 
 - Logic:
-  1. Sends a shutdown message to clients:  
-     ```json
-     {"type": "shutdown", "message": "Server is shutting down, please reconnect later"}
-     ```
-  2. Waits for all clients to disconnect.  
-  3. If timeout expires — executes `close_all()`.  
+  1. Waits for all clients to disconnect.  
+  2. If timeout expires — executes `close_all()`.  
 
 ---
 
