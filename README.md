@@ -1,11 +1,11 @@
 # FastAPI WebSocket Server
 
-🚀 A simple **FastAPI** server with WebSocket support for real-time communication and a **graceful shutdown** mechanism.  
+A simple **FastAPI** server with WebSocket support for real-time communication and a **graceful shutdown** mechanism.  
 The server waits until all clients disconnect or forces shutdown after a timeout (default: 30 minutes).
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 fastapi-websocket/
@@ -36,7 +36,7 @@ fastapi-websocket/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. Clone the repository:
 
@@ -59,7 +59,7 @@ pip install "uvicorn[standard]"
 
 ---
 
-## ▶️ Running the Server
+## Running the Server
 
 ```bash
 uvicorn main:app --reload
@@ -76,7 +76,7 @@ By default, the server runs at:
 
 ---
 
-## 🌐 WebSocket Testing
+## WebSocket Testing
 
 1. Open the test client in a browser:
 
